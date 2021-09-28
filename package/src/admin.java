@@ -46,9 +46,9 @@ public class admin {
 		frame.getContentPane().setLayout(null);
 		
 		JLabel lblAdmin = new JLabel("ADMIN");
-		lblAdmin.setFont(new Font("Times New Roman", Font.BOLD, 18));
+		lblAdmin.setFont(new Font("Teko SemiBold", Font.BOLD, 23));
 		lblAdmin.setForeground(Color.RED);
-		lblAdmin.setBounds(163, 13, 147, 64);
+		lblAdmin.setBounds(186, 13, 147, 64);
 		frame.getContentPane().add(lblAdmin);
 		
 		JButton btnBack = new JButton("BACK");
@@ -71,16 +71,8 @@ public class admin {
 				v.main(null);
 			}
 		});
-		btnNewButton.setBounds(65, 117, 120, 36);
+		btnNewButton.setBounds(153, 117, 120, 36);
 		frame.getContentPane().add(btnNewButton);
-		
-		JButton btnNewButton_1 = new JButton("Update Details");
-		btnNewButton_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
-		btnNewButton_1.setBounds(233, 117, 129, 36);
-		frame.getContentPane().add(btnNewButton_1);
 	}
 
 }

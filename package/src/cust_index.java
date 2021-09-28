@@ -53,7 +53,7 @@ public class cust_index {
 		JLabel lblCustomer = new JLabel("CUSTOMER");
 		lblCustomer.setFont(new Font("Times New Roman", Font.BOLD, 18));
 		lblCustomer.setForeground(Color.RED);
-		lblCustomer.setBounds(175, 18, 117, 49);
+		lblCustomer.setBounds(175, 13, 117, 49);
 		frame.getContentPane().add(lblCustomer);
 		
 		JButton btnNewButton = new JButton("New Order");

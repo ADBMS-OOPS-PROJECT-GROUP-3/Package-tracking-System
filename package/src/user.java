@@ -54,7 +54,7 @@ public class user {
 		JLabel lblNewLabel = new JLabel("Select User");
 		lblNewLabel.setForeground(Color.RED);
 		lblNewLabel.setFont(new Font("Stencil", Font.BOLD | Font.ITALIC, 18));
-		lblNewLabel.setBounds(150, 51, 432, 16);
+		lblNewLabel.setBounds(167, 51, 432, 16);
 		frame.getContentPane().add(lblNewLabel);
 		
 		JButton btnNewButton = new JButton("ADMIN");

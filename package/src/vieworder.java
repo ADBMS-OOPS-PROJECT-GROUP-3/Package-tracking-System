@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 public class vieworder {
 
 	private JFrame frame;
-	String a[][] = new String[5][7];
+	String a[][] = new String[10][7];
 	private JTable table;
 	private JTable table_1;
 	private JTable table_2;
@@ -83,12 +83,19 @@ public class vieworder {
 				for (int i = 0; i < arr.size(); i++) {
 					JSONObject new_obj = (JSONObject) arr.get(i);
 					a[i][0] = (String) new_obj.get("s_name");
-
 					a[i][1] = (String) new_obj.get("r_name");
 					a[i][2] = (String) new_obj.get("source");
 					a[i][3] = (String) new_obj.get("destination");
 					a[i][4] = (String) new_obj.get("tracking_id");
+					a[i][5] = (String) new_obj.get("order_id");
+					a[i][6] = (String) new_obj.get("Status");
+
+
+
+
 				}
+
+
 
 
 			}
@@ -99,23 +106,23 @@ public class vieworder {
 
 
 
-			for(int i=0;i<n;i++)
-			{
-				JLabel lblJnkj = new JLabel();
-
-				lblJnkj.setText((a[i][0]));
-				lblJnkj.setBounds(50, 74, 659, 399);
-				frame.getContentPane().add(lblJnkj);
-				JLabel lblJnkj2 = new JLabel();
-				lblJnkj2.setText((a[i][1]));
-				lblJnkj2.setBounds(50, 50, 659, 399);
-				frame.getContentPane().add(lblJnkj2);
-				JLabel lblJnkj3 = new JLabel();
-				lblJnkj3.setText((a[i][2]));
-				lblJnkj3.setBounds(50, 30, 659, 399);
-				frame.getContentPane().add(lblJnkj3);
-
-			}
+//			for(int i=0;i<n;i++)
+//			{
+//				JLabel lblJnkj = new JLabel();
+//
+//				lblJnkj.setText((a[i][0]));
+//				lblJnkj.setBounds(50, 74, 659, 399);
+//				frame.getContentPane().add(lblJnkj);
+//				JLabel lblJnkj2 = new JLabel();
+//				lblJnkj2.setText((a[i][1]));
+//				lblJnkj2.setBounds(50, 50, 659, 399);
+//				frame.getContentPane().add(lblJnkj2);
+//				JLabel lblJnkj3 = new JLabel();
+//				lblJnkj3.setText((a[i][2]));
+//				lblJnkj3.setBounds(50, 30, 659, 399);
+//				frame.getContentPane().add(lblJnkj3);
+//
+//			}
 
 
 
@@ -128,16 +135,76 @@ public class vieworder {
 			
 			table_2 = new JTable();
 			JScrollPane scrollpane = new JScrollPane(table_2);
-			scrollpane.setBounds(72, 236, 435, 213);
-			frame.add(scrollpane);
+			scrollpane.setBounds(89, 140, 495, 213);
+			frame.getContentPane().add(scrollpane);
 			table_2.setModel(new DefaultTableModel(
 				new Object[][] {
+						{
+								a[0][0],a[0][1],a[0][2],a[0][3],a[0][4],a[0][5],a[0][6]
+						},
+						{
+							a[1][0],a[1][1],a[1][2],a[1][3],a[1][4],a[1][5],a[1][6]
+						},
+						{
+							a[2][0],a[2][1],a[2][2],a[2][3],a[2][4],a[2][5],a[2][6]
+						},{
+						a[3][0],a[3][1],a[3][2],a[3][3],a[3][4],a[3][5],a[3][6]
+				},
+						{
+								a[4][0],a[4][1],a[4][2],a[4][3],a[4][4],a[4][5],a[4][6]
+						},
+						{
+								a[5][0],a[5][1],a[5][2],a[5][3],a[5][4],a[5][5],a[5][6]
+						},
+						{
+								a[6][0],a[6][1],a[6][2],a[6][3],a[6][4],a[6][5],a[6][6]
+						},
+						{
+								a[7][0],a[7][1],a[7][2],a[7][3],a[7][4],a[7][5],a[7][6]
+						},
+						{
+								a[8][0],a[8][1],a[8][2],a[8][3],a[8][4],a[8][5],a[8][6]
+						},
+						{
+								a[4][0],a[4][1],a[4][2],a[4][3],a[4][4],a[4][5],a[4][6]
+						},
+						{
+								a[4][0],a[4][1],a[4][2],a[4][3],a[4][4],a[4][5],a[4][6]
+						},
+						{
+								a[4][0],a[4][1],a[4][2],a[4][3],a[4][4],a[4][5],a[4][6]
+						}
+
+
+
 				},
 				new String[] {
-					"Source ", "New column", "New column", "New column", "New column"
+					"Sender Name ", "Receiver name", "Source", "Destination", "tracking id","Order_Id","Status"
 				}
 			));
-			table_2.setBounds(72, 236, 435, 213);
+			table_2.setBounds(72, 236, 435, 150);
+			
+			JButton btnNewButton = new JButton("Update");
+			btnNewButton.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent arg0) {
+				}
+			});
+			btnNewButton.setFont(new Font("Segoe UI Black", Font.BOLD, 18));
+			btnNewButton.setForeground(Color.BLACK);
+			btnNewButton.setBounds(185, 393, 139, 25);
+			frame.getContentPane().add(btnNewButton);
+			
+			JButton btnNewButton_1 = new JButton("Back");
+			btnNewButton_1.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent arg0) {
+					frame.dispose();
+					admin a = new admin();
+					a.main(null);
+				}
+			});
+			btnNewButton_1.setFont(new Font("Segoe UI Black", Font.BOLD, 18));
+			btnNewButton_1.setBounds(366, 395, 97, 25);
+			frame.getContentPane().add(btnNewButton_1);
 			
 			
 	

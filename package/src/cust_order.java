@@ -99,6 +99,7 @@ public class cust_order {
 				String rname = textField_1.getText();
 				String source = textField_2.getText();
 				String destination = textField_3.getText();
+				String status = "order placed";
 
 				try{
 					String postEndpoint = "http://127.0.0.1:9900/order";
@@ -107,6 +108,7 @@ public class cust_order {
 					jo.put("r_name" , rname);
 					jo.put("source" , source);
 					jo.put("destination" , destination);
+					jo.put("Status",status);
 
 					var request = HttpRequest.newBuilder()
 							.uri(URI.create(postEndpoint))
