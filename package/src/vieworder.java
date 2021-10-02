@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 public class vieworder {
 
 	private JFrame frame;
-	String a[][] = new String[10][7];
+	String a[][] = new String[12][7];
 	private JTable table;
 	private JTable table_1;
 	private JTable table_2;
@@ -135,7 +135,7 @@ public class vieworder {
 			
 			table_2 = new JTable();
 			JScrollPane scrollpane = new JScrollPane(table_2);
-			scrollpane.setBounds(89, 140, 495, 213);
+			scrollpane.setBounds(101, 136, 495, 213);
 			frame.getContentPane().add(scrollpane);
 			table_2.setModel(new DefaultTableModel(
 				new Object[][] {
@@ -166,13 +166,13 @@ public class vieworder {
 								a[8][0],a[8][1],a[8][2],a[8][3],a[8][4],a[8][5],a[8][6]
 						},
 						{
-								a[4][0],a[4][1],a[4][2],a[4][3],a[4][4],a[4][5],a[4][6]
+								a[9][0],a[9][1],a[9][2],a[9][3],a[9][4],a[9][5],a[9][6]
 						},
 						{
-								a[4][0],a[4][1],a[4][2],a[4][3],a[4][4],a[4][5],a[4][6]
+								a[10][0],a[10][1],a[10][2],a[10][3],a[10][4],a[10][5],a[10][6]
 						},
 						{
-								a[4][0],a[4][1],a[4][2],a[4][3],a[4][4],a[4][5],a[4][6]
+								a[11][0],a[11][1],a[11][2],a[11][3],a[11][4],a[11][5],a[11][6]
 						}
 
 
@@ -191,7 +191,7 @@ public class vieworder {
 			});
 			btnNewButton.setFont(new Font("Segoe UI Black", Font.BOLD, 18));
 			btnNewButton.setForeground(Color.BLACK);
-			btnNewButton.setBounds(185, 393, 139, 25);
+			btnNewButton.setBounds(220, 423, 139, 25);
 			frame.getContentPane().add(btnNewButton);
 			
 			JButton btnNewButton_1 = new JButton("Back");
@@ -203,8 +203,13 @@ public class vieworder {
 				}
 			});
 			btnNewButton_1.setFont(new Font("Segoe UI Black", Font.BOLD, 18));
-			btnNewButton_1.setBounds(366, 395, 97, 25);
+			btnNewButton_1.setBounds(387, 423, 97, 25);
 			frame.getContentPane().add(btnNewButton_1);
+			
+			JLabel lblNewLabel = new JLabel("New label");
+			lblNewLabel.setIcon(new ImageIcon("C:\\Users\\tkm\\Downloads\\pexels-pixabay-264547.jpg"));
+			lblNewLabel.setBounds(0, 0, 683, 486);
+			frame.getContentPane().add(lblNewLabel);
 			
 			
 	

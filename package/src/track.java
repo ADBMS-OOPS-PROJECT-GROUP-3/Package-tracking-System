@@ -101,22 +101,25 @@ public class track {
 
 
 			frame = new JFrame();
-			frame.setBounds(100, 100, 450, 300);
+			frame.getContentPane().setBackground(Color.WHITE);
+			frame.setBounds(100, 100, 705, 544);
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			frame.getContentPane().setLayout(null);
 
 			JLabel lblTrackYourOrder = new JLabel("Track Your Order");
-			lblTrackYourOrder.setFont(new Font("Courgette", Font.BOLD, 18));
-			lblTrackYourOrder.setForeground(new Color(102, 204, 0));
-			lblTrackYourOrder.setBounds(131, 26, 161, 34);
+			lblTrackYourOrder.setFont(new Font("Copperplate Gothic Bold", Font.BOLD, 38));
+			lblTrackYourOrder.setForeground(new Color(255, 200, 0));
+			lblTrackYourOrder.setBounds(149, 58, 455, 57);
 			frame.getContentPane().add(lblTrackYourOrder);
 
 			JLabel lblEnterYourTracking = new JLabel("Enter your Tracking Id    :");
-			lblEnterYourTracking.setBounds(30, 102, 170, 34);
+			lblEnterYourTracking.setFont(new Font("Segoe UI Symbol", Font.BOLD, 14));
+			lblEnterYourTracking.setForeground(Color.BLACK);
+			lblEnterYourTracking.setBounds(112, 162, 224, 34);
 			frame.getContentPane().add(lblEnterYourTracking);
 
 			textField = new JTextField();
-			textField.setBounds(196, 108, 116, 22);
+			textField.setBounds(347, 169, 116, 22);
 			frame.getContentPane().add(textField);
 			textField.setColumns(10);
 
@@ -129,15 +132,19 @@ public class track {
 
 				}
 			});
-			btnSubmit.setBounds(130, 198, 97, 25);
+			btnSubmit.setBounds(232, 258, 97, 25);
 			frame.getContentPane().add(btnSubmit);
 
-			JLabel lblStatus = new JLabel("Status             :");
-			lblStatus.setBounds(83, 156, 97, 16);
+			JLabel lblStatus = new JLabel("Status                :");
+			lblStatus.setFont(new Font("Segoe UI Symbol", Font.BOLD, 14));
+			lblStatus.setForeground(Color.RED);
+			lblStatus.setBounds(194, 211, 171, 16);
 			frame.getContentPane().add(lblStatus);
 
 			lblNewLabel = new JLabel(" ...");
-			lblNewLabel.setBounds(196, 156, 100, 16);
+			lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 13));
+			lblNewLabel.setForeground(Color.RED);
+			lblNewLabel.setBounds(357, 212, 100, 16);
 			frame.getContentPane().add(lblNewLabel);
 
 			JButton btnNewButton = new JButton("Back");
@@ -148,8 +155,13 @@ public class track {
 					c.main(null);
 				}
 			});
-			btnNewButton.setBounds(264, 198, 97, 25);
+			btnNewButton.setBounds(357, 258, 97, 25);
 			frame.getContentPane().add(btnNewButton);
+			
+			JLabel lblNewLabel_1 = new JLabel("");
+			lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\tkm\\Downloads\\pexels-karolina-grabowska-4498128.jpg"));
+			lblNewLabel_1.setBounds(12, 13, 663, 471);
+			frame.getContentPane().add(lblNewLabel_1);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

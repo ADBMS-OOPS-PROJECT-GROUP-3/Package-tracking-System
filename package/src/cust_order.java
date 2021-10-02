@@ -21,6 +21,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import org.json.simple.JSONObject;
+import javax.swing.ImageIcon;
 
 
 public class cust_order {
@@ -67,24 +68,32 @@ public class cust_order {
 		frame.getContentPane().setLayout(null);
 		
 		JLabel lblOrderDetails = new JLabel("Order Details");
-		lblOrderDetails.setFont(new Font("Stencil", Font.PLAIN, 17));
+		lblOrderDetails.setFont(new Font("Stencil", Font.PLAIN, 27));
 		lblOrderDetails.setForeground(Color.RED);
-		lblOrderDetails.setBounds(158, 24, 156, 42);
+		lblOrderDetails.setBounds(128, 37, 303, 42);
 		frame.getContentPane().add(lblOrderDetails);
 		
 		JLabel lblSenderName = new JLabel("Sender Name   :");
+		lblSenderName.setFont(new Font("Nirmala UI", Font.BOLD, 13));
+		lblSenderName.setForeground(Color.WHITE);
 		lblSenderName.setBounds(38, 92, 108, 22);
 		frame.getContentPane().add(lblSenderName);
 		
 		JLabel lblNewLabel = new JLabel("Receiver Name :");
+		lblNewLabel.setFont(new Font("Nirmala UI", Font.BOLD, 13));
+		lblNewLabel.setForeground(Color.WHITE);
 		lblNewLabel.setBounds(38, 129, 108, 16);
 		frame.getContentPane().add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Source            :");
+		lblNewLabel_1.setFont(new Font("Nirmala UI", Font.BOLD, 13));
+		lblNewLabel_1.setForeground(Color.WHITE);
 		lblNewLabel_1.setBounds(38, 169, 97, 16);
 		frame.getContentPane().add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Destination       :");
+		lblNewLabel_2.setFont(new Font("Nirmala UI", Font.BOLD, 13));
+		lblNewLabel_2.setForeground(Color.WHITE);
 		lblNewLabel_2.setBounds(38, 208, 97, 16);
 		frame.getContentPane().add(lblNewLabel_2);
 		
@@ -168,14 +177,23 @@ public class cust_order {
 		textField_3.setColumns(10);
 		
 		JLabel lblYourTrackingId = new JLabel("Your Tracking Id :");
-		lblYourTrackingId.setBounds(38, 265, 108, 22);
+		lblYourTrackingId.setFont(new Font("Nirmala UI", Font.BOLD, 13));
+		lblYourTrackingId.setForeground(Color.WHITE);
+		lblYourTrackingId.setBounds(38, 265, 116, 22);
 		
 		
 		frame.getContentPane().add(lblYourTrackingId);
 		
 		 lblXnx = new JLabel("");
+		 lblXnx.setForeground(Color.YELLOW);
+		 lblXnx.setFont(new Font("Nirmala UI", Font.BOLD, 13));
 		lblXnx.setBounds(166, 268, 150, 16);
 		frame.getContentPane().add(lblXnx);
+		
+		JLabel lblNewLabel_3 = new JLabel("New label");
+		lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\tkm\\Downloads\\pexels-ivan-samkov-7620565.jpg"));
+		lblNewLabel_3.setBounds(0, 0, 443, 478);
+		frame.getContentPane().add(lblNewLabel_3);
 		
 		
 		

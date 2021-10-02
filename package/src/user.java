@@ -53,8 +53,8 @@ public class user {
 		
 		JLabel lblNewLabel = new JLabel("Select User");
 		lblNewLabel.setForeground(Color.RED);
-		lblNewLabel.setFont(new Font("Stencil", Font.BOLD | Font.ITALIC, 18));
-		lblNewLabel.setBounds(167, 51, 432, 16);
+		lblNewLabel.setFont(new Font("Stencil", Font.BOLD | Font.ITALIC, 22));
+		lblNewLabel.setBounds(160, 44, 432, 55);
 		frame.getContentPane().add(lblNewLabel);
 		
 		JButton btnNewButton = new JButton("ADMIN");
@@ -95,5 +95,10 @@ public class user {
 		label_1.setIcon(new ImageIcon(img1));
 		label_1.setBounds(238, 111, 114, 112);
 		frame.getContentPane().add(label_1);
+		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\tkm\\Downloads\\pexels-laura-tancredi-7078034.jpg"));
+		lblNewLabel_1.setBounds(0, 0, 472, 375);
+		frame.getContentPane().add(lblNewLabel_1);
 	}
 }

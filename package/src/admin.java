@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.ImageIcon;
 
 
 public class admin {
@@ -41,14 +42,14 @@ public class admin {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(100, 100, 714, 551);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		JLabel lblAdmin = new JLabel("ADMIN");
-		lblAdmin.setFont(new Font("Teko SemiBold", Font.BOLD, 23));
+		lblAdmin.setFont(new Font("Teko SemiBold", Font.BOLD, 61));
 		lblAdmin.setForeground(Color.RED);
-		lblAdmin.setBounds(186, 13, 147, 64);
+		lblAdmin.setBounds(272, 13, 221, 107);
 		frame.getContentPane().add(lblAdmin);
 		
 		JButton btnBack = new JButton("BACK");
@@ -59,7 +60,7 @@ public class admin {
 				o.main(null);
 			}
 		});
-		btnBack.setBounds(175, 183, 75, 25);
+		btnBack.setBounds(319, 308, 75, 25);
 		frame.getContentPane().add(btnBack);
 		
 		JButton btnNewButton = new JButton("VIew Orders");
@@ -71,8 +72,13 @@ public class admin {
 				v.main(null);
 			}
 		});
-		btnNewButton.setBounds(153, 117, 120, 36);
+		btnNewButton.setBounds(297, 251, 120, 36);
 		frame.getContentPane().add(btnNewButton);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\tkm\\Downloads\\tyler-franta-iusJ25iYu1c-unsplash.jpg"));
+		lblNewLabel.setBounds(0, 0, 696, 504);
+		frame.getContentPane().add(lblNewLabel);
 	}
 
 }
